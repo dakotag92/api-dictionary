@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .search-container input[type="search"],
+body.dark-mode #search-btn {
+  background-color: #555;
+  color: #fff;
+}
+
+body.serif-font {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body.mono-font {
+  font-family: "Courier New", Courier, monospace;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+header {
+  margin-top: 5em;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/*... rest of your CSS ...*/
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header-controls {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.dropdown-toggle {
+  color: black !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-right: 1px solid lightgrey !important;
+  padding-right: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 !important;
+}
+
+.dropdown-toggle::after {
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  color: purple;
+  vertical-align: middle;
+  margin-left: 0.255em;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  color: black !important;
+  background-color: transparent !important;
+}
+
+.dropdown-menu {
+  margin-top: 0.5em;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.search-container input[type="search"] {
+  width: calc(100% - 50px);
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  padding: 5px 20px;
+  outline: none;
+}
+
+#search-btn {
+  width: 50px;
+  height: 40px;
+  background: #ccc url("../starter-code/assets/images/icon-search.svg")
+    no-repeat center;
+  background-size: 22px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  outline: none;
+}
+
+#search-btn:focus,
+#search-btn:active,
+.search-container input[type="search"]:focus,
+.search-container input[type="search"]:active {
+  outline: none;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .search-container input[type="search"],
+body.dark-mode #search-btn {
+  background-color: #555;
+  color: #fff;
+}
+
+body.dark-mode img {
+  filter: invert(59%) sepia(51%) saturate(3953%) hue-rotate(276deg)
+    brightness(92%) contrast(89%);
+}
+body.serif-font {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body.mono-font {
+  font-family: "Courier New", Courier, monospace;
+}
